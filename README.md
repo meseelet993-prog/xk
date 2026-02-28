@@ -1,5 +1,3 @@
-# 基于uni-app的心理健康教育与咨询中心线上平台小程序的设计与实现
-心理健康教育与咨询中心线上平台（小程序端）
 基于 uni-app 开发的心理健康服务小程序，为学生、咨询师和管理员提供便捷的咨询工单管理、互动评价与站内信沟通等功能。
 
 本项目是心理健康教育与咨询中心线上平台的前端部分，采用前后端分离架构，后端基于 Spring Boot 提供 RESTful API，数据库使用 MySQL。小程序端利用 uni-app 实现一套代码多端发布（支持微信小程序、H5 等），为用户提供流畅的移动端体验。
@@ -45,7 +43,7 @@ Node.js（12.x 或更高版本）
 安装与运行
 1. 克隆代码
 bash
-git clone https://github.com/meseelet993-prog/xk.git
+git clone https://github.com/your-repo/uni-app-mental-health.git
 cd uni-app-mental-health
 2. 打开项目
 使用 HBuilderX 打开项目根目录，或使用命令行工具。
@@ -59,7 +57,7 @@ npm install
 在项目中找到 API 配置文件（通常在 api/config.js 或 common/config.js），修改 baseURL 为你的后端服务地址。例如：
 
 javascript
-export const baseURL = 'http://localhost:8082/api'; // 开发环境
+export const baseURL = 'http://localhost:8080/api'; // 开发环境
 5. 运行项目
 运行到微信小程序：
 在 HBuilderX 中，点击工具栏“运行” -> “运行到小程序模拟器” -> “微信开发者工具”。确保已打开微信开发者工具并登录。
@@ -71,6 +69,9 @@ export const baseURL = 'http://localhost:8082/api'; // 开发环境
 成功运行后，可在小程序模拟器或浏览器中预览效果。如需真机调试，可使用微信开发者工具的“真机调试”功能。
 
 目录结构说明
+## 目录结构说明
+
+```
 uni-app-mental-health/
 ├── pages/                  # 页面文件
 │   ├── index/              # 首页
@@ -99,6 +100,7 @@ uni-app-mental-health/
 ├── manifest.json           # 应用配置文件（应用ID、权限等）
 ├── pages.json              # 页面路由配置
 └── uni.scss                # 全局样式变量
+```
 开发规范
 命名规范
 
