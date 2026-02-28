@@ -1,0 +1,123 @@
+{
+  "pages": [{
+      "path": "pages/index/index",
+      "style": {
+        "navigationBarTitleText": "心理健康咨询",
+        "enablePullDownRefresh": true
+      }
+    },
+    {
+      "path": "pages/login/login",
+      "style": {
+        "navigationBarTitleText": "登录",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/register/register",
+      "style": {
+        "navigationBarTitleText": "注册"
+      }
+    },
+    {
+      "path": "pages/ticket/list/list",
+      "style": {
+        "navigationBarTitleText": "我的工单",
+        "enablePullDownRefresh": true
+      }
+    },
+    {
+      "path": "pages/ticket/create/create",
+      "style": {
+        "navigationBarTitleText": "创建工单"
+      }
+    },
+    {
+      "path": "pages/ticket/detail/detail",
+      "style": {
+        "navigationBarTitleText": "工单详情"
+      }
+    },
+    {
+      "path": "pages/consultant/list/list",
+      "style": {
+        "navigationBarTitleText": "咨询师列表",
+        "enablePullDownRefresh": true
+      }
+    },
+    {
+      "path": "pages/message/list/list",
+      "style": {
+        "navigationBarTitleText": "消息",
+        "enablePullDownRefresh": true
+      }
+    },
+    {
+      "path": "pages/message/chat/chat",
+      "style": {
+        "navigationBarTitleText": "聊天"
+      }
+    },
+    {
+      "path": "pages/profile/index/index",
+      "style": {
+        "navigationBarTitleText": "个人中心"
+      }
+    }
+  ],
+  "tabBar": {
+    "color": "#999999",
+    "selectedColor": "#4A90E2",
+    "backgroundColor": "#FFFFFF",
+    "borderStyle": "black",
+    "list": [{
+        "pagePath": "pages/index/index",
+        "iconPath": "static/images/icons/home.png",
+        "selectedIconPath": "static/images/icons/home-active.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/ticket/list/list",
+        "iconPath": "static/images/icons/order.png",
+        "selectedIconPath": "static/images/icons/order-active.png",
+        "text": "工单"
+      },
+      {
+        "pagePath": "pages/message/list/list",
+        "iconPath": "static/images/icons/message.png",
+        "selectedIconPath": "static/images/icons/message-active.png",
+        "text": "消息"
+      },
+      {
+        "pagePath": "pages/profile/index/index",
+        "iconPath": "static/images/icons/profile.png",
+        "selectedIconPath": "static/images/icons/profile-active.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "globalStyle": {
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "心理健康咨询平台",
+    "navigationBarBackgroundColor": "#4A90E2",
+    "backgroundColor": "#F5F7FA",
+    "app-plus": {
+      "background": "#F5F7FA"
+    }
+  },
+  "uniIdRouter": {},
+  "easycom": {
+    "autoscan": true,
+    "custom": {
+      "^uni-(.*)": "@dcloudio/uni-ui/lib/uni-$1/uni-$1.vue"
+    }
+  },
+  "condition": {
+    "current": 0,
+    "list": [{
+      "name": "",
+      "path": "",
+      "query": ""
+    }]
+  }
+}

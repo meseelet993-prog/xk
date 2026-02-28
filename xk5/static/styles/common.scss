@@ -1,0 +1,130 @@
+// 颜色变量
+$primary-color: #4A90E2;
+$secondary-color: #F5F7FA;
+$success-color: #09BB07;
+$warning-color: #FF9500;
+$error-color: #FF3B30;
+$text-primary: #333333;
+$text-secondary: #666666;
+$text-muted: #999999;
+$border-color: #EEEEEE;
+$background-color: #F5F7FA;
+
+// 字体大小
+$font-size-xs: 20rpx;
+$font-size-sm: 24rpx;
+$font-size-base: 28rpx;
+$font-size-lg: 32rpx;
+$font-size-xl: 36rpx;
+$font-size-xxl: 40rpx;
+
+// 间距
+$spacing-xs: 8rpx;
+$spacing-sm: 16rpx;
+$spacing-base: 24rpx;
+$spacing-lg: 32rpx;
+$spacing-xl: 40rpx;
+$spacing-xxl: 60rpx;
+
+// 圆角
+$border-radius-sm: 8rpx;
+$border-radius-base: 16rpx;
+$border-radius-lg: 24rpx;
+$border-radius-xl: 32rpx;
+
+// 阴影
+$shadow-sm: 0 2rpx 8rpx rgba(0, 0, 0, 0.06);
+$shadow-base: 0 4rpx 20rpx rgba(0, 0, 0, 0.08);
+$shadow-lg: 0 8rpx 32rpx rgba(0, 0, 0, 0.12);
+
+// 混合器
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin text-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@mixin multi-line-ellipsis($lines: 2) {
+  display: -webkit-box;
+  -webkit-line-clamp: $lines;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+// 响应式断点
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == sm {
+    @media (max-width: #{$breakpoint-sm}) { @content; }
+  }
+  @if $breakpoint == md {
+    @media (max-width: #{$breakpoint-md}) { @content; }
+  }
+  @if $breakpoint == lg {
+    @media (max-width: #{$breakpoint-lg}) { @content; }
+  }
+  @if $breakpoint == xl {
+    @media (max-width: #{$breakpoint-xl}) { @content; }
+  }
+}
+
+// 通用类
+.text-primary { color: $text-primary; }
+.text-secondary { color: $text-secondary; }
+.text-muted { color: $text-muted; }
+.text-success { color: $success-color; }
+.text-warning { color: $warning-color; }
+.text-error { color: $error-color; }
+
+.bg-primary { background: $primary-color; }
+.bg-secondary { background: $secondary-color; }
+
+.flex { display: flex; }
+.flex-1 { flex: 1; }
+.flex-center { @include flex-center; }
+.flex-between { @include flex-between; }
+
+.text-ellipsis { @include text-ellipsis; }
+.text-ellipsis-2 { @include multi-line-ellipsis(2); }
+.text-ellipsis-3 { @include multi-line-ellipsis(3); }
+
+// 重置样式
+button::after {
+  border: none;
+}
+
+button[disabled] {
+  color: #FFFFFF !important;
+  background: #CCCCCC !important;
+}
+
+// 暗色模式支持
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text-primary: #FFFFFF;
+    --text-secondary: #CCCCCC;
+    --text-muted: #999999;
+    --border-color: #444444;
+    --background-color: #1A1A1A;
+  }
+  
+  .common-card {
+    background: #2D2D2D;
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "name": "uni-app-mental-health",
+  "version": "1.0.0",
+  "description": "专业的心理健康咨询平台",
+  "main": "main.js",
+  "scripts": {
+    "dev": "uni -p mp-weixin",
+    "build": "uni build mp-weixin",
+    "dev:h5": "uni -p h5",
+    "build:h5": "uni build h5"
+  },
+  "dependencies": {
+    "@dcloudio/uni-app": "^3.0.0-40200220241101001",
+    "@dcloudio/uni-app-plus": "^3.0.0-40200220241101001",
+    "@dcloudio/uni-h5": "^3.0.0-40200220241101001",
+    "@dcloudio/uni-mp-weixin": "^3.0.0-40200220241101001",
+    "@dcloudio/uni-ui": "^1.4.20",
+    "vue": "^3.3.4",
+    "vuex": "^4.1.0"
+  },
+  "devDependencies": {
+    "@dcloudio/types": "^3.3.3",
+    "@dcloudio/uni-cli-shared": "^3.0.0-40200220241101001",
+    "@vue/compiler-sfc": "^3.3.4",
+    "sass": "^1.66.1",
+    "sass-loader": "^10.4.1"
+  },
+  "uni-app": {
+    "scripts": {}
+  },
+  "private": true
+}

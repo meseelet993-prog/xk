@@ -1,0 +1,1 @@
+import { getConsultantList } from '@/api/consultantApi.js'
