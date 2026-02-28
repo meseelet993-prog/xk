@@ -71,7 +71,6 @@ export const baseURL = 'http://localhost:8082/api'; // 开发环境
 成功运行后，可在小程序模拟器或浏览器中预览效果。如需真机调试，可使用微信开发者工具的“真机调试”功能。
 
 目录结构说明
-text
 uni-app-mental-health/
 ├── pages/                  # 页面文件
 │   ├── index/              # 首页
