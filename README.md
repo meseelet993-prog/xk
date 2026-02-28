@@ -1,5 +1,4 @@
 # 基于uni-app的心理健康教育与咨询中心线上平台小程序的设计与实现
-我的毕设（my graduation project）
 心理健康教育与咨询中心线上平台（小程序端）
 基于 uni-app 开发的心理健康服务小程序，为学生、咨询师和管理员提供便捷的咨询工单管理、互动评价与站内信沟通等功能。
 
@@ -46,7 +45,7 @@ Node.js（12.x 或更高版本）
 安装与运行
 1. 克隆代码
 bash
-git clone https://github.com/your-repo/uni-app-mental-health.git
+git clone https://github.com/meseelet993-prog/xk.git
 cd uni-app-mental-health
 2. 打开项目
 使用 HBuilderX 打开项目根目录，或使用命令行工具。
